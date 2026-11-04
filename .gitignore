@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.archify/
+
+# Lineage exports and outputs never belong here; only test fixtures are tracked.
+out/
+lineage/
+*.csv
+!skills/**/tests/fixtures/**/*.csv
