@@ -1,0 +1,11 @@
+database_name|referencing_schema|referencing_name|referencing_type|referenced_server_name|referenced_database_name|referenced_schema|referenced_name|is_caller_dependent|is_ambiguous
+-------------|------------------|----------------|----------------|----------------------|------------------------|-----------------|---------------|-------------------|------------
+WarehouseDb|dw|LoadPositions|P|NULL|NULL|stg|RawTrades|0|0
+WarehouseDb|dw|LoadPositions|P|NULL|NULL|dw|Positions|0|0
+WarehouseDb|dw|CalcPnL|P|NULL|NULL|dw|Positions|0|0
+WarehouseDb|dw|CalcPnL|P|NULL|NULL|dw|PnL|0|0
+WarehouseDb|dw|CalcPnL|P|NULL|RefDb|ref|FxRates|0|0
+WarehouseDb|dw|RunDaily|P|NULL|NULL|dw|LoadPositions|0|0
+WarehouseDb|dw|RunDaily|P|NULL|NULL|dw|CalcPnL|0|0
+WarehouseDb|rpt|vPnL|V|NULL|NULL|dw|PnL|0|0
+WarehouseDb|dw|DynamicLoader|P|NULL|NULL|NULL|SomeTable|1|0

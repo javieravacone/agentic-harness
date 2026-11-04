@@ -1,0 +1,11 @@
+database_name|schema_name|object_name|object_type|type_desc|modify_date
+-------------|-----------|-----------|-----------|---------|-----------
+WarehouseDb|stg|RawTrades|U|USER_TABLE|2026-10-01T10:00:00
+WarehouseDb|stg|Positions|U|USER_TABLE|2026-10-01T10:00:00
+WarehouseDb|dw|Positions|U|USER_TABLE|2026-10-01T10:00:00
+WarehouseDb|dw|PnL|U|USER_TABLE|2026-10-01T10:00:00
+WarehouseDb|dw|LoadPositions|P|SQL_STORED_PROCEDURE|2026-10-02T09:00:00
+WarehouseDb|dw|CalcPnL|P|SQL_STORED_PROCEDURE|2026-10-02T09:00:00
+WarehouseDb|dw|RunDaily|P|SQL_STORED_PROCEDURE|2026-10-02T09:00:00
+WarehouseDb|dw|DynamicLoader|P|SQL_STORED_PROCEDURE|2026-10-02T09:00:00
+WarehouseDb|rpt|vPnL|V|VIEW|2026-10-03T08:00:00

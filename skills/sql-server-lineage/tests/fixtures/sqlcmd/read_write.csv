@@ -1,0 +1,10 @@
+database_name|referencing_schema|referencing_name|referenced_server_name|referenced_database_name|referenced_schema|referenced_name|is_selected|is_updated|status
+-------------|------------------|----------------|----------------------|------------------------|-----------------|---------------|-----------|----------|------
+WarehouseDb|dw|LoadPositions|NULL|NULL|stg|RawTrades|1|0|ok
+WarehouseDb|dw|LoadPositions|NULL|NULL|dw|Positions|1|1|ok
+WarehouseDb|dw|CalcPnL|NULL|NULL|dw|Positions|1|0|ok
+WarehouseDb|dw|CalcPnL|NULL|NULL|dw|PnL|0|1|ok
+WarehouseDb|dw|CalcPnL|NULL|RefDb|ref|FxRates|1|0|ok
+WarehouseDb|dw|RunDaily|NULL|NULL|dw|LoadPositions|0|0|ok
+WarehouseDb|dw|RunDaily|NULL|NULL|dw|CalcPnL|0|0|ok
+WarehouseDb|dw|DynamicLoader|NULL|NULL|NULL|NULL|NULL|NULL|error:2020

@@ -1,0 +1,2 @@
+database_name,referencing_schema,referencing_name,referencing_type,referenced_server_name,referenced_database_name,referenced_schema,referenced_name,is_caller_dependent,is_ambiguous
+WarehouseDb,dbo,LoadOrders,P,NULL,NULL,dbo,Orders,0,0

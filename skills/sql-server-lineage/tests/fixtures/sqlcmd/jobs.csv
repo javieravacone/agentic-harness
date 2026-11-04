@@ -1,0 +1,6 @@
+job_name|job_enabled|step_id|step_name|subsystem|database_name|command|command_truncated
+--------|-----------|-------|---------|---------|-------------|-------|-----------------
+Daily Load|1|1|Run daily|TSQL|WarehouseDb|EXEC [dw].[RunDaily] @AsOf = NULL|0
+Daily Load|1|2|Export|SSIS|NULL|/ISSERVER "\SSISDB\Exports\Export.dtsx"|0
+Other Job|1|1|Unrelated|TSQL|WarehouseDb|SELECT COUNT(*) FROM xx.Positions|0
+Long Job|0|1|Big step|TSQL|WarehouseDb|EXEC dw.CalcPnL; -- long script|1

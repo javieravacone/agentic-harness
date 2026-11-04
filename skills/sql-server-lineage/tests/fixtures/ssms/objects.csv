@@ -1,0 +1,3 @@
+database_name,schema_name,object_name,object_type,type_desc,modify_date
+WarehouseDb,dbo,Orders,U,USER_TABLE,2026-10-01T10:00:00
+WarehouseDb,dbo,LoadOrders,P,SQL_STORED_PROCEDURE,2026-10-01T10:00:00

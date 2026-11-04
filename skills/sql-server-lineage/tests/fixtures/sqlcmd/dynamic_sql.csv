@@ -1,0 +1,3 @@
+database_name|schema_name|object_name|uses_sp_executesql|uses_exec_string|uses_openquery
+-------------|-----------|-----------|------------------|----------------|--------------
+WarehouseDb|dw|DynamicLoader|1|0|0
