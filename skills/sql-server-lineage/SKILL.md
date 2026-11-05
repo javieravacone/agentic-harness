@@ -29,6 +29,9 @@ catalog exports (sql/*.sql) -> CSV -> [gap review, cited] -> build_lineage.py ->
 - `VIEW DEFINITION` on the database; read access to `msdb` for jobs.
 - Optional: the Archify skill (Node 18+, Chrome or Edge) for an explorable HTML diagram.
 
+The `/lineage-map` prompt runs Steps 1 and 2, `/lineage-gap-review` runs Step 3 and
+`/lineage-to-archify` the HTML part of Step 4.
+
 ## Step 1 · Export the catalog
 
 Paths are relative to the repository root that holds this skill under `.github/skills/`.

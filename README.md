@@ -25,10 +25,19 @@ the client's repositories.
 
 ## Using it in the client environment
 
-1. Clone or download this repository with an approved tool.
-2. Copy the skills you need to `.github/skills/` and the prompts to `.github/prompts/` of the work
-   repository.
-3. Run a prompt in Copilot Chat with `/<prompt-name>`.
+1. Clone this repository with an approved tool (for example GitHub Desktop) and open it in VS Code.
+2. In Copilot Chat (agent mode) run `/install-harness`. It asks for the work repository path and the
+   skills, then copies each skill to `.github/skills/` and its prompts to `.github/prompts/` there.
+3. Open the work repository in VS Code and run its prompts in order.
+
+### SQL Server lineage, in order
+
+| Step | Command | Result |
+| --- | --- | --- |
+| 0 | `/install-harness` with skill `sql-server-lineage` (from this repository) | skill and prompts installed in the work repository |
+| 1 | `/lineage-map` | catalog exports in `lineage\out`, issue lineage and Mermaid diagram in `lineage\<issue>` |
+| 2 | `/lineage-gap-review` | cited dependencies the catalog cannot see, lineage rebuilt |
+| 3 | `/lineage-to-archify` (optional) | explorable HTML diagram; needs the audited Archify skill |
 
 ## Tests
 

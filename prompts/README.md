@@ -1,14 +1,18 @@
 # Prompts
 
-Reusable Copilot prompt files. Each `*.prompt.md` works as is: copy it to `.github/prompts/` in the
-work repository and run it in Copilot Chat with `/<file name without .prompt.md>`.
+Reusable Copilot prompt files. `/install-harness` (in [`../.github/prompts/`](../.github/prompts/))
+copies them into `.github/prompts/` of a work repository together with their skill; then run them in
+Copilot Chat with `/<file name without .prompt.md>`.
 
 ## Registry
 
+Prompts that use the same skill are listed in the order you run them.
+
 | Prompt | Purpose | Uses | Status | Last reviewed |
 | --- | --- | --- | --- | --- |
-| [`lineage-gap-review`](lineage-gap-review.prompt.md) | Add cited dependencies the SQL Server catalog cannot see | `sql-server-lineage` skill | Draft | 2026-11-04 |
-| [`lineage-to-archify`](lineage-to-archify.prompt.md) | Draw a focused lineage as an Archify dataflow | `archify` skill | Draft, Archify pending audit | 2026-11-04 |
+| [`lineage-map`](lineage-map.prompt.md) | 1. Export the catalog and build the lineage of an issue | `sql-server-lineage` skill | Draft | 2026-11-05 |
+| [`lineage-gap-review`](lineage-gap-review.prompt.md) | 2. Add cited dependencies the catalog cannot see | `sql-server-lineage` skill | Draft | 2026-11-04 |
+| [`lineage-to-archify`](lineage-to-archify.prompt.md) | 3. Optional: draw the lineage as an Archify dataflow | `sql-server-lineage` and `archify` skills | Draft, Archify pending audit | 2026-11-04 |
 
 Status values: `Draft` (not yet used on real work), `In use`, `Retired` (keep the file, say why).
 
