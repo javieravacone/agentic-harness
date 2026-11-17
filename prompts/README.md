@@ -14,6 +14,7 @@ Prompts that use the same skill are listed in the order you run them.
 | [`lineage-gap-review`](lineage-gap-review.prompt.md) | 2. Add cited dependencies the catalog cannot see | `sql-server-lineage` skill | Draft | 2026-11-04 |
 | [`lineage-to-archify`](lineage-to-archify.prompt.md) | 3. Optional: draw the lineage as an Archify dataflow | `sql-server-lineage` and `archify` skills | Draft, Archify pending audit | 2026-11-04 |
 | [`citrix-3-harness-audit`](citrix-3-harness-audit.prompt.md) | Inventory the Citrix Copilot harness and compare it with the proposed kit without applying changes | User-provided environment evidence | Draft | 2026-11-10 |
+| [`harness-precedent-learning`](harness-precedent-learning.prompt.md) | Improve an existing harness with precedent discovery, architecture checks, reviewed learning, and a regression evaluation | Existing harness and authorized repository evidence | Draft | 2026-11-17 |
 
 Status values: `Draft` (not yet used on real work), `In use`, `Retired` (keep the file, say why).
 
