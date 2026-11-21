@@ -17,6 +17,7 @@ Prompts that use the same skill are listed in the order you run them.
 | [`harness-precedent-learning`](harness-precedent-learning.prompt.md) | Improve an existing harness with precedent discovery, architecture checks, reviewed learning, and a regression evaluation | Existing harness and authorized repository evidence | Draft | 2026-11-17 |
 | [`dbt-dagster-domain-agent`](dbt-dagster-domain-agent.prompt.md) | Diagnose a failed pipeline change and establish an evidence-backed specialist with mandatory, verified routing | Existing OpenSpec change, repository conventions, and runtime capabilities; supply the incident inside the work environment | Draft | 2026-11-18 |
 | [`pstack-minimal-mr`](pstack-minimal-mr.prompt.md) | Map domain owners across two repos and review feature MRs for necessary production changes, reuse, and behavioral evidence | Standalone bootstrap for chat; selected pstack practices included, no plugin required | Draft | 2026-11-20 |
+| [`domain-owner-workflows`](domain-owner-workflows.prompt.md) | Verify and wire domain owners to feature, refactoring and performance workflows | Standalone chat bootstrap; existing domain agents, procedures and local OpenSpec evidence | Draft | 2026-11-21 |
 
 Status values: `Draft` (not yet used on real work), `In use`, `Retired` (keep the file, say why).
 
